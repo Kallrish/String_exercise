@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 /**Classe para capturar as strings a serem trabalhadas.
  *
- *@author: Jonatas"Kallrish"Ribeiro
+ *@author Jonatas"Kallrish"Ribeiro
  */
 public class Strings {
   /**Método para capturar as strings e realizar o processamento das mesmas.
    *
-   *@author: Jonatas "Kallrish" Ribeiro
+   *@author Jonatas "Kallrish" Ribeiro
    */
   public static void main(String[] args) {
     // Instaciamento e criação do objeto usando padrão de entrada (System.ini)
@@ -19,11 +19,11 @@ public class Strings {
     System.out.println("Olá! Seja bem-vindo ao exercício com Strings! \nVamos começar!\n");
     //Solicitação na tela para que o usuário digite o seu nome
     System.out.println("Digite o seu nome:");
-    String nome = " "; //Variável que receberá o nome
+    String nome; //Variável que receberá o nome
     nome = ler.nextLine(); //Variável nome recebe o valor da String digitada
     //Solicitação na tela para que o usuário digite o seu sobrenome
     System.out.println("Digite o seu sobrenome:");
-    String sobreNome = " "; //Variável que receberá o sobrenome
+    String sobreNome; //Variável que receberá o sobrenome
     sobreNome = ler.nextLine();   //Variável sobrenome recebe o valor da String digitada
     //Variável que receberá o a concatenação de nome s sobrenome
     final var nomeCompleto = nome + " " + sobreNome;
@@ -49,7 +49,7 @@ public class Strings {
     //Retorna o texto com as letras "a" trocadas por @
     System.out.println("Troca letra: " + string.replace("a", "@"));
     //Retorna se o texto é igual a palabra citada
-    System.out.println("Igual a \"Jonatas\"? " + string.equals("Jonatas"));
+    System.out.println("Igual a \"Jonatas\"? " + nome.equals("Jonatas"));
     //Retorna se o texto é igual ao texto citado, ignorando maiúsculas e minúsculas
     System.out.println("Igual ignorando case a \" JONATAS ribeiro \"? "
             + string.equalsIgnoreCase(" JONATAS ribeiro "));
